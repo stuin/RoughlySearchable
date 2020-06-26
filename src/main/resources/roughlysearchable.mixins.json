@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.stuintech.roughlysearchable.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "EntryListMixin",
+    "ItemRendererMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

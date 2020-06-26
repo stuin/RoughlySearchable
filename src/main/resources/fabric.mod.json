@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "roughlysearchable",
+  "version": "${version}",
+
+  "name": "Roughly Searchable",
+  "description": "Highlights all inventory items that match current rei search",
+  "authors": [
+    "Stuin"
+  ],
+  "contact": {
+    "homepage": "https://stuintech.com/minecraft",
+    "sources": "https://github.com/stuin/roughly-searchable"
+  },
+
+  "license": "MIT",
+  "icon": "assets/roughlysearchable/icon.png",
+
+  "environment": "*",
+  "mixins": [
+    "roughlysearchable.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.8.8",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "roughlyenoughitems": ">=4.5.5"
+  }
+}
