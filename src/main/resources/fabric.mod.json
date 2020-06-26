@@ -10,11 +10,10 @@
   ],
   "contact": {
     "homepage": "https://stuintech.com/minecraft",
-    "sources": "https://github.com/stuin/roughly-searchable"
+    "sources": "https://github.com/stuin/RoughlySearchable"
   },
 
   "license": "MIT",
-  "icon": "assets/roughlysearchable/icon.png",
 
   "environment": "*",
   "mixins": [
