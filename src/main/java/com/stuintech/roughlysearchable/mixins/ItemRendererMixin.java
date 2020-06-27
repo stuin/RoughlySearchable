@@ -1,7 +1,7 @@
 package com.stuintech.roughlysearchable.mixins;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.stuintech.roughlysearchable.IEntryList;
+import com.stuintech.roughlysearchable.api.IEntryList;
 import me.shedaniel.rei.api.EntryStack;
 import me.shedaniel.rei.gui.ContainerScreenOverlay;
 import me.shedaniel.rei.gui.widget.EntryListWidget;
@@ -22,7 +22,7 @@ public abstract class ItemRendererMixin implements SynchronousResourceReloadList
     @Inject(at = @At("NEW"), method = "renderGuiItemModel(Lnet/minecraft/item/ItemStack;IILnet/minecraft/client/render/model/BakedModel;)V")
     protected void renderGuiItemModel(ItemStack stack, int x, int y, BakedModel model, CallbackInfo ci) {
         EntryListWidget widget = ContainerScreenOverlay.getEntryListWidget();
-        if(widget instanceof IEntryList && ((IEntryList) widget).hasSearchTerm()) {
+        if(widget instanceof IEntryList && ((IEntryList) widget).shouldSearch()) {
             if(widget.canLastSearchTermsBeAppliedTo(EntryStack.create(stack)))
                 RenderSystem.scalef(GROW, GROW, GROW);
             else

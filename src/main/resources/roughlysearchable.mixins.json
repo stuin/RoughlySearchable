@@ -4,6 +4,8 @@
   "package": "com.stuintech.roughlysearchable.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ConfigObjectMixin",
+    "ContainerScreenMixin",
     "EntryListMixin",
     "ItemRendererMixin"
   ],

@@ -14,11 +14,24 @@
   },
 
   "license": "MIT",
+  "icon": "assets/roughlysearchable/icon.png",
 
   "environment": "*",
+  "entrypoints": {
+    "modmenu": [
+      "me.shedaniel.rei.REIModMenuEntryPoint"
+    ]
+  },
   "mixins": [
     "roughlysearchable.mixins.json"
   ],
+
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": 392023
+    }
+  },
 
   "depends": {
     "fabricloader": ">=0.8.8",
