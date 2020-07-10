@@ -2,10 +2,8 @@ package com.stuintech.roughlysearchable.mixins;
 
 import com.stuintech.roughlysearchable.api.ICustomConfig;
 import com.stuintech.roughlysearchable.api.IEntryList;
-import me.shedaniel.rei.api.ConfigObject;
 import me.shedaniel.rei.gui.widget.EntryListWidget;
 import me.shedaniel.rei.gui.widget.WidgetWithBounds;
-import me.shedaniel.rei.impl.ScreenHelper;
 import me.shedaniel.rei.impl.SearchArgument;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -21,7 +19,7 @@ public abstract class EntryListMixin extends WidgetWithBounds implements IEntryL
 
     @Override
     public boolean shouldSearch() {
-        if(((ICustomConfig) ConfigObject.getInstance()).searchOn() && MinecraftClient.getInstance().currentScreen instanceof HandledScreen)
+        if(ICustomConfig.getConfig().RS_search && MinecraftClient.getInstance().currentScreen instanceof HandledScreen)
             return !lastSearchArguments.isEmpty();
         return false;
     }

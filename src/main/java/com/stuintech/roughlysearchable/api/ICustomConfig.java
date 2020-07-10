@@ -1,9 +1,15 @@
 package com.stuintech.roughlysearchable.api;
 
-import me.shedaniel.clothconfig2.api.ModifierKeyCode;
+import me.shedaniel.rei.api.ConfigObject;
 
 public interface ICustomConfig {
-    ModifierKeyCode getRoughlySearchableKeybind();
-    boolean searchOn();
-    void toggleSearch();
+    RoughlySearchableConfig.Config RS_getConfig();
+    
+    static RoughlySearchableConfig.Config getConfig() {
+        return ((ICustomConfig) ConfigObject.getInstance()).RS_getConfig();
+    }
+
+    static RoughlySearchableConfig.Indicator getIndicator() {
+        return ((ICustomConfig) ConfigObject.getInstance()).RS_getConfig().RS_indicator;
+    }
 }
