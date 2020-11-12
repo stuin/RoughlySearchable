@@ -22,7 +22,7 @@ public abstract class SearchFieldMixin extends TextFieldWidget {
     public void keyPressed(int int_1, int int_2, int int_3, CallbackInfoReturnable cir) {
         EntryListWidget widget = ContainerScreenOverlay.getEntryListWidget();
         if(ICustomConfig.getConfig().RS_search && ICustomConfig.getIndicator().RS_background)
-            OverlaySearchField.isSearching = ((IEntryList) widget).shouldSearch();
+            OverlaySearchField.isHighlighting = ((IEntryList) widget).shouldSearch();
     }
 
     /*@Inject(at = @At("TAIL"), method = "renderBorder(Lnet/minecraft/client/util/math/MatrixStack;)V")
