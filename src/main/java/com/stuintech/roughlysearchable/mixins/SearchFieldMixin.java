@@ -24,12 +24,4 @@ public abstract class SearchFieldMixin extends TextFieldWidget {
         if(ICustomConfig.getConfig().RS_search && ICustomConfig.getIndicator().RS_background)
             OverlaySearchField.isHighlighting = ((IEntryList) widget).shouldSearch();
     }
-
-    /*@Inject(at = @At("TAIL"), method = "renderBorder(Lnet/minecraft/client/util/math/MatrixStack;)V")
-    public void renderBorder(MatrixStack matrices, CallbackInfo ci) {
-        EntryListWidget widget = ContainerScreenOverlay.getEntryListWidget();
-        if (isMain && ((IEntryList) widget).shouldSearch()) {
-            fill(matrices, this.getBounds().x - 1, this.getBounds().y - 1, this.getBounds().x + this.getBounds().width + 1, this.getBounds().y + this.getBounds().height + 1, -852212);
-        }
-    }*/
 }

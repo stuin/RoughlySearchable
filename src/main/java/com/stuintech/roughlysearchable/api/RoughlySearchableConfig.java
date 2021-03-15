@@ -1,7 +1,7 @@
 package com.stuintech.roughlysearchable.api;
 
-import me.sargunvohra.mcmods.autoconfig1u.annotation.ConfigEntry;
-import me.sargunvohra.mcmods.autoconfig1u.shadowed.blue.endless.jankson.Comment;
+import me.shedaniel.autoconfig.annotation.ConfigEntry;
+import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 import me.shedaniel.clothconfig2.api.Modifier;
 import me.shedaniel.clothconfig2.api.ModifierKeyCode;
 import net.minecraft.client.util.InputUtil;
@@ -16,9 +16,6 @@ public class RoughlySearchableConfig {
         public ModifierKeyCode RS_keybind;
         public boolean RS_search;
 
-        @Comment("Searches inside any items that have the right nbt data.")
-        public boolean RS_shulker;
-
         @ConfigEntry.Gui.CollapsibleObject(
                 startExpanded = true
         )
@@ -26,7 +23,6 @@ public class RoughlySearchableConfig {
         
         public Config() {
             RS_keybind = ModifierKeyCode.of(InputUtil.Type.KEYSYM.createFromCode(73), Modifier.of(false, true, false));
-            RS_search = false;
             RS_indicator = new Indicator();
         }
         
@@ -47,7 +43,7 @@ public class RoughlySearchableConfig {
         )
         public float RS_falseSize = 0.7F;
 
-        @Comment("Uses default REI search, incompatible with Shulker Boxes")
+        @Comment("Uses default REI search")
         public boolean RS_background = false;
     }
 
