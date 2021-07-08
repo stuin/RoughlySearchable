@@ -1,6 +1,6 @@
 package com.stuintech.roughlysearchable.api;
 
-import me.shedaniel.rei.api.ConfigObject;
+import me.shedaniel.rei.api.client.config.ConfigObject;
 
 public interface ICustomConfig {
     RoughlySearchableConfig.Config RS_getConfig();

@@ -2,15 +2,15 @@ package com.stuintech.roughlysearchable.mixins;
 
 import com.stuintech.roughlysearchable.api.ICustomConfig;
 import com.stuintech.roughlysearchable.api.RoughlySearchableConfig;
-import me.shedaniel.rei.api.ConfigManager;
-import me.shedaniel.rei.api.ConfigObject;
-import me.shedaniel.rei.gui.ContainerScreenOverlay;
+import me.shedaniel.rei.api.client.config.ConfigManager;
+import me.shedaniel.rei.api.client.config.ConfigObject;
+import me.shedaniel.rei.impl.client.gui.ScreenOverlayImpl;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(ContainerScreenOverlay.class)
+@Mixin(ScreenOverlayImpl.class)
 public abstract class ContainerScreenMixin {
 
     @Inject(at = @At("HEAD"), cancellable = true, method = "keyPressed(III)Z")

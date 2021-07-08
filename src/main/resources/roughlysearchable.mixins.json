@@ -6,7 +6,6 @@
   "mixins": [
     "ConfigObjectMixin",
     "ContainerScreenMixin",
-    "EntryListMixin",
     "ItemRendererMixin",
     "SearchFieldMixin"
   ],
