@@ -29,9 +29,9 @@
   },
 
   "depends": {
-    "fabricloader": ">=0.13.0",
+    "fabricloader": ">=0.14.0",
     "fabric": "*",
-    "minecraft": ">=1.18.2",
-    "roughlyenoughitems": ">=8.2.444"
+    "minecraft": ">=1.19",
+    "roughlyenoughitems": ">=9.0.458"
   }
 }
