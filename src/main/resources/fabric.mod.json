@@ -21,6 +21,12 @@
     "roughlysearchable.mixins.json"
   ],
 
+  "entrypoints": {
+    "rei_client": [
+      "com.stuintech.roughlysearchable.RSClientPlugin"
+    ]
+  },
+
   "custom": {
     "modupdater": {
       "strategy": "curseforge",

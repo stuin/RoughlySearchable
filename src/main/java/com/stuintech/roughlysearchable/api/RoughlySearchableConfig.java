@@ -36,12 +36,12 @@ public class RoughlySearchableConfig {
                 min = 0.25F,
                 max = 2.0F
         )
-        public float RS_trueSize = 1.3F;
+        public float RS_trueSize = 1.25F;
         @UseRatio(
                 min = 0.25F,
                 max = 2.0F
         )
-        public float RS_falseSize = 0.7F;
+        public float RS_falseSize = 0.75F;
 
         @Comment("Uses default REI search")
         public boolean RS_background = false;

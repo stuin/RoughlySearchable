@@ -1,9 +1,9 @@
 {
   "config.roughlyenoughitems.roughlysearchable": "Roughly Searchable",
-  "config.roughlyenoughitems.config.RS_keybind": "Toggle Searching",
-  "config.roughlyenoughitems.config.RS_search": "Search On",
-  "config.roughlyenoughitems.config.RS_indicator": "Indicators",
-  "config.roughlyenoughitems.config.RS_indicator.RS_trueSize": "Matching Size",
-  "config.roughlyenoughitems.config.RS_indicator.RS_falseSize": "Non-Matching Size",
-  "config.roughlyenoughitems.config.RS_indicator.RS_background": "Darken background"
+  "config.roughlysearchable.keybind": "Inventory Search Toggle Keybind",
+  "config.roughlysearchable.search": "Searching On",
+  "config.roughlysearchable.indicator.trueSize": "Size of matching items",
+  "config.roughlysearchable.indicator.falseSize": "Size of non-matching items",
+  "config.roughlysearchable.indicator.background": "Darken item background",
+  "config.roughlysearchable.indicator.background.desc": "Syncs default REI search to Rougly Searchable"
 }
